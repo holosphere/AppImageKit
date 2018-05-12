@@ -13,7 +13,12 @@ sudo apt-get -t jessie-backports install cmake
 
 bash -ex build.sh
 ```
+Build fails on ARM with error: faile
+```
+/mnt/usb/build-arm/AppImageKit/src/getsection.c:52:17: warning: passing argument 1 of ‘sprintf’ from incompatible pointer type
+         sprintf(stderr, "Platforms other than 32-bit/64-bit are currently not supported!");
 
+```
 # AppImageKit [![Build Status](https://travis-ci.org/AppImage/AppImageKit.svg?branch=appimagetool/master)](https://travis-ci.org/AppImage/AppImageKit) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/ff60338a447941afb17c30f777314bee)](https://www.codacy.com/app/probonopd/AppImageKit?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=AppImage/AppImageKit&amp;utm_campaign=Badge_Grade) [![discourse](https://img.shields.io/badge/forum-discourse-orange.svg)](http://discourse.appimage.org) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/probonopd/AppImageKit?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) [![irc](https://img.shields.io/badge/IRC-%23AppImage%20on%20freenode-blue.svg)](https://webchat.freenode.net/?channels=AppImage) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZT9CL8M5TJU72)
 
 The __AppImage__ format is a format for packaging applications in a way that allows them to
